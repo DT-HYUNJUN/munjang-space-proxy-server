@@ -3,7 +3,7 @@ const axios = require("axios");
 const cors = require("cors");
 
 const app = express();
-app.use(cors({ origin: ["https://gacde-munjang-space.web.app/"], methods: ["GET"] }));
+app.use(cors());
 
 app.get("/getBooks", async (req, res) => {
   const inputTitle = req.query.title;
